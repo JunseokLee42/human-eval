@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/280", "prompt": "def your_function_name(parameter):\n    \"\"\"\n    annotation\n    \"\"\"\n\n", "entry_point": "entry_point", "canonical_solution": "your canonical_solution\n\n", "test": "def check(candidate):\n    # Check some simple cases\n    assert candidate(prospective output) == answer\n    ...\n\n"}
