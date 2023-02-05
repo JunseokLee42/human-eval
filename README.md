@@ -2,7 +2,7 @@
 1. input.txt에 Humaneval.json의 형식에 맞춰 텍스트를 입력합니다.  
 2. fetch_id function의 start를 갱신합니다.  
 3. printing.py를 실행합니다.  
-4. example.json 파일을 HumanEval.jsonl에 붙여넣습니다.
+4. example.json 파일을 HumanEval.jsonl에 붙여넣습니다.  
 Tip!  
 start 수정 안 하고 example.json에서 따로 수정해도 됩니다. 
 # 주의사항  
