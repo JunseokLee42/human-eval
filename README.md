@@ -5,7 +5,6 @@
 4. example.json 파일을 HumanEval.jsonl에 붙여 넣습니다.  
 Tip!  
 start 수정 안 하고 example.json에서 따로 수정해도 됩니다. 
-사용 후 통일성을 위해 from module_name import function_name\n\n, import function_name as alias_name, \ndef로 수정하는 걸 추천드립니다.
 # 주의사항  
 1. input.txt와 printing.py가 같은 디렉토리 상에 위치해야 합니다.  
 2. input.txt의 annotation에서 '\n\n' 있으면 에러 뜹니다.    
