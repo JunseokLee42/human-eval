@@ -1,12 +1,12 @@
-def your_function_name(parameter):
+def function_name(parameter):
     """
     annotation
     """
 
 entry_point
-your canonical_solution
+    canonical_solution
 
 def check(candidate):
     # Check some simple cases
-    assert candidate(prospective output) == answer
-    ...
+    assert candidate(parameter) == answer,
+    assert candidate(parameter) == answer
