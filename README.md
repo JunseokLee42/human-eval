@@ -1,3 +1,4 @@
+# 코드로 어떤 일을 하고 싶은지, 혹은 코드를 실행하면 어떤 일이 일어나는지에 대한 설명이 없음
 # 사용방법  
 1. input.txt에 Humaneval.json의 형식에 맞춰 텍스트를 입력합니다.  
 2. fetch_id function의 start를 갱신합니다.  
