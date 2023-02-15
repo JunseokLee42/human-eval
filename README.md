@@ -1,5 +1,4 @@
-# Introduction
-This repo is about creating a json file based on the format of `HumanEval.jsonl` developed by members in openai.
+# Creating HumanEval.jsonl
 
 ## How to Create Json
 1. Write texts based on the format of `HumanEval.jsonl`. 
