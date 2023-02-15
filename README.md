@@ -18,7 +18,7 @@ After executing `printing.py`, it is recommended to modify the part correspondin
 
     from module_name import function_name\n\n
     import function_name as alias_name\n\n
-    \ndef.
+    \ndef
 
 ## Cautions
 1. The files, `input.txt` and `printing.py` should be located on the same directory.
