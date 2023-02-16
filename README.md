@@ -6,13 +6,11 @@
 2. Write texts based on the format of `HumanEval.jsonl`. 
 
 3. Execute `printing.py`
-    then you could see a change in `example.json`.
+    then you could see changes in `problems.json` and `samples.json`.
     
 4. Add `example.json` to `HumanEval.jsonl`.  
 
 ### Tip
-It would be convenient to make the change to `example.json` rather than the start parameter.
-
 After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` like the below:
 
     from module_name import function_name\n\n
