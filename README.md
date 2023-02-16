@@ -8,7 +8,7 @@
 3. Execute `printing.py`
     then you could see changes in `problems.json` and `samples.json`.
     
-4. Add `example.json` to `HumanEval.jsonl`.  
+4. Add them to `HumanEval.jsonl`.  
 
 ### Tip
 After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` like the below:
