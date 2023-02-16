@@ -3,17 +3,21 @@ import json
 class HumanEval:
     def __init__(self, lines):
         self.lines = lines
-        self.humaneval = {
+        self.problems = {
             "task_id": "dummy",
             "prompt": "dummy",
             "entry_point": "dummy",
             "canonical_solution": "dummy",
-            "test": "dummy"
+            "test": "dummy",
+        }
+        self.samples = {
+            "task_id": "dummy",
+            "completion": "dummy"
         }
         self.idx = 0
 
     def fetch_id(self, start: int):
-        self.humaneval["task_id"] = 'HumanEval/{start}'.format(start=start)
+        self.problems["task_id"] = 'HumanEval/{start}'.format(start=start)
     
     def fetch_prompt(self):
         prompt = ''
@@ -25,7 +29,7 @@ class HumanEval:
                 prompt += '\n'
                 self.idx += 1
                 break
-        self.humaneval["prompt"] = prompt
+        self.problems["prompt"] = prompt
 
     def fetch_entry(self):
         entry_point = ''
@@ -34,7 +38,7 @@ class HumanEval:
         for item in temp:
             entry_point += item
         temp.clear
-        self.humaneval["entry_point"] = entry_point
+        self.problems["entry_point"] = entry_point
         self.idx += 1
     
     def fetch_canonical(self):
@@ -44,29 +48,41 @@ class HumanEval:
             self.idx += 1
         canonical += '\n'
         self.idx += 1
-        self.humaneval["canonical_solution"] = canonical
+        self.problems["canonical_solution"] = canonical
     
     def fetch_test(self):
         test = ''
         while (self.idx != len(self.lines)):
             test += self.lines[self.idx]
             self.idx += 1
-        self.humaneval["test"] = test
+        self.problems["test"] = test
     
-    def make_json(self, file_path: str):
+    def fetch_samples(self):
+        self.samples["task_id"] = self.problems["task_id"]
+        self.samples["completion"] = self.problems["canonical_solution"]
+
+    def make_problems(self, file_path: str):
         with open(file_path, 'w') as f:
-            json.dump(self.humaneval, f, ensure_ascii=False)
+            json.dump(self.problems, f, ensure_ascii=False)
+
+    def make_samples(self, file_path: str):
+        with open(file_path, 'w') as f:
+            json.dump(self.samples, f, ensure_ascii=False)
+
 
 def main(lines: list):
     a = HumanEval(lines)
     # 숫자값을 갱신해줘야 합니다.
-    a.fetch_id(start=280)
+    a.fetch_id(start=164)
     a.fetch_prompt()
     a.fetch_entry()
     a.fetch_canonical()
     a.fetch_test()
-    file_path = './data/example.json'
-    a.make_json(file_path)
+    a.fetch_samples()
+    problems = './data/problems.json'
+    samples = './data/samples.json'
+    a.make_problems(problems)
+    a.make_samples(samples)
 
 if __name__ == "__main__":
     # 전처리 
