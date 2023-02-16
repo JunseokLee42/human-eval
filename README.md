@@ -1,9 +1,9 @@
-# Creating HumanEval.jsonl
+# Creating HumanEval.jsonl as intended
 
 ## How to Create Json
-1. Write texts based on the format of `HumanEval.jsonl`. 
+1. Renew the parameter of fetch_id function before executing `printing.py`.
 
-2. Renew the parameter of fetch_id function before executing `printing.py`.
+2. Write texts based on the format of `HumanEval.jsonl`. 
 
 3. Execute `printing.py`
     then you could see a change in `example.json`.
