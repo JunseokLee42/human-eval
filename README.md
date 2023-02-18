@@ -18,7 +18,7 @@ After executing `printing.py`, it is recommended to modify the part correspondin
     \ndef
 
 ## Cautions
-1. The files, `input.txt` and `printing.py` should be located on the same directory.
+1. The files, `input.txt` and `printing.py` should be located in the same directory.
 
 2. It might occur errors if the annotation includes in some escape sequences like '\n\n'.
 
