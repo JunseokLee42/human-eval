@@ -1,4 +1,6 @@
-# Creating Problem Json as intended
+# Creating Problem Jsonl as intended
+
+This repo is about creating HumanEval.jsonl dataset easily.
 
 ## How to Create Json
 1. Renew the parameter of fetch_id function before executing `printing.py`.
@@ -6,9 +8,24 @@
 2. Write texts based on the format of `HumanEval.jsonl`. 
 
 3. Execute `printing.py`
-    then you could see changes in `problems.json` and `samples.json`.
+    then you could see changes in `problem.json` and `samples.json`.
     
-4. Add them to `HumanEval.jsonl`.  
+4. Add them to `HumanEval.jsonl`.
+
+## `input.txt` Example
+
+    def add(a,b):
+        """
+        make a program which returns a plus b.
+        """
+    
+    add
+        return a+b
+    
+    def check(candidate):
+        # Check some simple cases
+        assert candidate(3,4) == 7
+        assert candidate(10,11) == 21
 
 ### Tip
 After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` like the below:
@@ -18,9 +35,9 @@ After executing `printing.py`, it is recommended to modify the part correspondin
     \ndef
 
 ## Cautions
-1. The files, `input.txt` and `printing.py` should be located in the same directory.
+1. Be sure the directory where the files, `input.txt` and `printing.py` are located in.
 
-2. It might occur errors if the annotation includes in some escape sequences like '\n\n'.
+2. It might occur errors if the docstrings include in some escape sequences like '\n\n'.
 
 ## Reference
 https://github.com/openai/human-eval
