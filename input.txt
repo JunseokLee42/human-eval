@@ -1,6 +1,6 @@
 def function_name(parameter):
     """
-    annotation
+    annotation about a problem
     """
 
 entry_point
@@ -8,5 +8,5 @@ entry_point
 
 def check(candidate):
     # Check some simple cases
-    assert candidate(parameter) == answer,
+    assert candidate(parameter) == answer
     assert candidate(parameter) == answer
