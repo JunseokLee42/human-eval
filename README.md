@@ -30,7 +30,7 @@ HumanEval dataset are handwritten programming problems.
         assert candidate(10,11) == 21
 
 ### Tip
-After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` like the below:
+After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` in terms of unity on the following:
 
     from module_name import function_name\n\n
     import function_name as alias_name\n\n
