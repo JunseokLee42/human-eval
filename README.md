@@ -2,6 +2,8 @@
 
 This repo is about creating HumanEval.jsonl dataset easily.
 
+HumanEval dataset are handwritten programming problems.
+
 ## How to Create Json
 1. Renew the parameter of fetch_id function before executing `printing.py`.
 
