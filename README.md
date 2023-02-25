@@ -2,7 +2,9 @@
 
 This repo is about creating HumanEval.jsonl dataset easily.
 
-HumanEval dataset are handwritten programming problems.
+HumanEval dataset are handwritten programming problems described in `2.2. HumanEval: Hand-Written Evaluation Set` section on the following paper.
+
+Paper: "[Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)".
 
 ## How to Create Json
 1. Renew the parameter of fetch_id function before executing `printing.py`.
