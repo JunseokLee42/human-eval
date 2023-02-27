@@ -32,7 +32,7 @@ Paper: "[Evaluating Large Language Models Trained on Code](https://arxiv.org/abs
         assert candidate(10,11) == 21
 
 ### Tip
-After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` in terms of unity on the following:
+After executing `printing.py`, it is recommended to modify the part corresponding to importing modules or functions in `input.txt` in terms of unity as follows:
 
     from module_name import function_name\n\n
     import function_name as alias_name\n\n
