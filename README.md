@@ -14,7 +14,7 @@ Paper: "[Evaluating Large Language Models Trained on Code](https://arxiv.org/abs
 3. Execute `printing.py`
     then you could see changes in `problem.json` and `samples.json`.
     
-4. Add them to `HumanEval.jsonl`.
+4. Add `problem.json` to `HumanEval.jsonl`.
 
 ## `input.txt` Example
 
