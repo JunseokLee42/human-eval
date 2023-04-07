@@ -12,7 +12,7 @@ Paper: "[Evaluating Large Language Models Trained on Code](https://arxiv.org/abs
 2. Write texts based on the format of `HumanEval.jsonl`. 
 
 3. Execute `printing.py`
-    then you could see changes in `problem.json` and `samples.json`.
+    then you could see changes in `problems.json` and `samples.json`.
     
 4. Add `problem.json` to `HumanEval.jsonl`.
 
