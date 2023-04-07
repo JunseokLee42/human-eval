@@ -1,3 +1,5 @@
+As of March 2023, the [Codex](https://platform.openai.com/docs/guides/code) models are now deprecated. Please check out OpenAI's newer Chat models which are able to do many coding tasks with similar capability
+
 # Creating Problem Jsonl as intended
 
 This repo is about creating HumanEval.jsonl dataset easily.
