@@ -72,7 +72,7 @@ class HumanEval:
 
 def main(lines: list):
     a = HumanEval(lines)
-    # 숫자값을 갱신해줘야 합니다.
+    # renew start parameter
     a.fetch_id(start=164)
     a.fetch_prompt()
     a.fetch_entry()
@@ -85,15 +85,15 @@ def main(lines: list):
     a.make_samples(samples)
 
 if __name__ == "__main__":
-    # 전처리 
+    # preprocessing
     file = open('./input.txt', 'r', encoding='utf-8')
     lines = file.readlines()
-    # "를 \" 으로 수정
+    # convert " into \"
     for idx, line in enumerate(lines):
         temp = line
         lines[idx] = temp
     
-    # 마지막 줄 \n\n 추가
+    # add \n\n to last line
     lines[-1] += '\n\n'
 
     main(lines)
