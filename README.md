@@ -1,4 +1,4 @@
-Nowadays, this repository might not be useful because the Codex models are now [deprecated](https://platform.openai.com/docs/guides/code).
+Nowadays, this repository might not be useful because the Codex models are now [deprecated](https://platform.openai.com/docs/models).
 
 If you are interested in OpenAI's new Chat models, please refer to the OpenAI's newer Chat models which are able to do many coding tasks with similar capability.
 
